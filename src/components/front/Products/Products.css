@@ -6,6 +6,19 @@
 body{
   background-color:#FFFEF2 ;
 }
+.filter{
+  display: flex;
+  justify-content: center;
+}
+.filter-button{
+  border-radius: 10px;
+  border:1px solid black;
+  outline: none;
+  background-color: #F5F4E9;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
 .products{
   margin: 0 auto;
   display: flex;

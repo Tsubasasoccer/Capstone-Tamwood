@@ -1,11 +1,24 @@
-import React from "react";
+import React ,{useState} from "react";
 import "./Products.css";
 
 const Products = ({ productItem,handleAddProduct }) => {
+  const[productList,setProductList]= useState(productItem)
   console.log(productItem);
+  const FilterProduct=(cat)=>{
+    const updateList = productItem.filter((x)=>x.category===cat);
+    setProductList(updateList)
+  }
   return (
-    <div className="products">
-      {productItem.map((pr) => (
+    <>
+    <div className="filter">
+      <button className="filter-button" onClick={()=>setProductList(productItem)}>All</button>
+      <button className="filter-button"onClick={()=>FilterProduct("tops")}>Tops</button>
+      <button className="filter-button" onClick={()=>FilterProduct("bottoms")}>Bottoms</button>
+      <button className="filter-button" onClick={()=>FilterProduct("others")}>Others</button>
+
+    </div>
+        <div className="products">
+      {productList.map((pr) => (
         
         <div className="card">
           <div>
@@ -25,6 +38,8 @@ const Products = ({ productItem,handleAddProduct }) => {
         
       ))}
     </div>
+    </>
+
   );
 };
 
