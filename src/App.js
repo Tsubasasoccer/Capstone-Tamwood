@@ -4,7 +4,7 @@ import data from './components/back/data';
 import Header from './components/front/Header/Header';
 import Products from './components/front/Products/Products';
 import Cart from './components/front/Cart/Cart';
-import { BrowserRouter, Route,Routes } from "react-router-dom";
+import { HashRouter, Route,Routes } from "react-router-dom";
 
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
   }
   // console.log(cartItems);
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Routes>
       <Route path="/" element={<><Header cartItems={cartItems}/><Products
        productItem={productItem} handleAddProduct={handleAddProduct}
@@ -46,7 +46,7 @@ function App() {
          />}/>
       
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
   );
 }
 
