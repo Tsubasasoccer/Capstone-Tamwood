@@ -38,7 +38,7 @@ function App() {
        productItem={productItem} handleAddProduct={handleAddProduct}
        /></>}>
      </Route>
-     <Route path="cart" element={<Cart
+     <Route path="/cart" element={<Cart
       cartItems={cartItems}
       handleAddProduct={handleAddProduct}
       handleRemoveProduct={handleRemoveProduct}
