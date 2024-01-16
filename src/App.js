@@ -34,7 +34,7 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<><Header cartItems={cartItems}/><Products
+      <Route path="Capstone-Tamwood/" element={<><Header cartItems={cartItems}/><Products
        productItem={productItem} handleAddProduct={handleAddProduct}
        /></>}>
      </Route>
