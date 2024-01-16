@@ -70,7 +70,7 @@ margin: 0 auto;
   border-radius: 10px;
   padding: 5px 10px;
   cursor: pointer;
-  background-color: #EFEFEF;
+  background-color: #F5F4E9;
 }
 .cart-items-total-price-name{
   display: flex;
@@ -90,6 +90,7 @@ margin: 0 auto;
   border-radius: 10px;
   padding: 5px 10px;
   cursor: pointer;
+  background-color: #F5F4E9;
 }
 .clear-cart{
   display: flex;
