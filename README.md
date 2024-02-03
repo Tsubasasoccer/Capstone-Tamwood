@@ -1,2 +1,2 @@
-## My Portfolio
-This is my porofolio website. This project showcases semantic HTML5, custom CSS, and ES6+ JavaScript.
+## Shopping Cart 
+This is a simple shopping cart. This project showcases semantic HTML5, custom CSS, and React JS.
